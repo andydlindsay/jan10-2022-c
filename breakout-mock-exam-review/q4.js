@@ -28,7 +28,41 @@ const round = function(number) {
   return Math.round(number * 100) / 100;
 };
 
+const q0Funcs = require('./q0');
+const sum = q0Funcs.sum;
+
 const stdev = function(arr) {
+  // sqrt(sum((x - populationMean)^2)/numberOfValues)
+
+  const numberOfValues = arr.length;
+  const populationMean = sum(arr) / numberOfValues;
+
+  const differences = [];
+  for (const num of arr) {
+    const difference = num - populationMean;
+    differences.push(difference);
+  }
+
+  // console.log(populationMean);
+  // console.log(differences);
+
+  const squares = [];
+  for (const diff of differences) {
+    const square = Math.pow(diff, 2);
+    squares.push(square);
+  }
+
+  // console.log(squares);
+
+  const sumOfSquares = sum(squares);
+
+  const avg = sumOfSquares / numberOfValues;
+
+  // console.log('avg', avg);
+
+  const squareRoot = Math.sqrt(avg);
+
+  return round(squareRoot);
 
 };
 
