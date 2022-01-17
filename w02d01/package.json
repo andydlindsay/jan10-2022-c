@@ -1,0 +1,22 @@
+{
+  "name": "w02d01",
+  "version": "1.0.0",
+  "description": "Lecture notes for w2d1 lecture covering testing",
+  "main": "manual-testing.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "keywords": [
+    "testing",
+    "mocha",
+    "test",
+    "runner",
+    "hello",
+    "world"
+  ],
+  "author": "Andy Lindsay",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^9.1.4"
+  }
+}
