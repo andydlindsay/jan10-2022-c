@@ -27,7 +27,18 @@ Examples:
 */
 
 const minmax = function(list) {
+  list.sort();
 
+  if (typeof list[0] === 'number') {
+    list.sort((a, b) => {
+      return a - b;
+    });
+  }
+
+  const smallest = list[0];
+  const largest = list[list.length - 1];
+
+  return [smallest, largest];
 };
 
 // Don't change below:

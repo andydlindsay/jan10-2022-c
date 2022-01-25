@@ -14,7 +14,7 @@ Unfortunately, JavaScript doesn't have a built-in range() function, so we want y
 
 If a non-number is passed in for the first argument, return an empty array.
 
-Pro Tip: Remember to work incrementally. Start off just implementing the false and false scenario for the second and third parameters. In other words, focus on the zero-based, ascending range first. Work on edge cases at the very end (such as passing in a string instead of a number, as shown in the final example below.)
+Hint: Remember to work incrementally. Start off just implementing the false and false scenario for the second and third parameters. In other words, focus on the zero-based, ascending range first. Work on edge cases at the very end (such as passing in a string instead of a number, as shown in the final example below.)
 
 **Examples:**
 
@@ -30,7 +30,29 @@ Pro Tip: Remember to work incrementally. Start off just implementing the false a
 */
 
 const range = function(count, skipZero, descending) {
+  if (typeof count !== 'number') {
+    return [];
+  }
 
+  const output = [];
+
+  let start = 0;
+  if (skipZero) {
+    start = 1;
+  }
+
+  const end = count + start;
+
+  for (let i = start; i < end; i++) {
+    output.push(i);
+  }
+
+  if (descending) {
+    output.reverse();
+  }
+
+  // console.log(output);
+  return output;
 };
 
 // Don't change below:
