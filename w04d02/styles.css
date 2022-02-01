@@ -1,0 +1,15 @@
+html {
+  background-color: chocolate;
+  color: aquamarine;
+}
+
+.content {
+  border: 2px dotted #bada55;
+  border-radius: 15px;
+}
+
+#main-list {
+  color: salmon;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
