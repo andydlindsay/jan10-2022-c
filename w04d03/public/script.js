@@ -58,8 +58,9 @@ $(() => {
     }).then((rabbits) => {
       console.log(rabbits);
 
+      // empty the parent element before we append new children to it
       $wereRabbitContainer.empty();
-      
+
       for (const rabbitKey in rabbits) {
         console.log('rabbitKey', rabbitKey);
         const $wereRabbit = createWereRabbit(rabbits[rabbitKey]);
@@ -71,14 +72,17 @@ $(() => {
   fetchRabbits();
 
   $('#new-rabbit-form').on('submit', function (event) {
+    // prevent the default behaviour of the form (making a GET request to the current page)
     event.preventDefault();
     console.log('the form has submitted');
 
+    // serialize the form data (turn it into a urlencoded string to be sent to the server)
     // const data = $('#new-rabbit-form').serialize();
+
+    // if you use `this`, it must be a function keyword function (ie. not an arrow function)
     const data = $(this).serialize();
 
     console.log('data', data);
-
     
     $.ajax({
       method: 'POST',
