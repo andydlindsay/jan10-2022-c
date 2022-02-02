@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <h2>Welcome the Were-Rabbits Wiki</h2>
+  <!-- were-rabbits
+* diet: string
+* confirmedKills: number -->
+
+  <div>
+    <form id="new-rabbit-form">
+      <h2>Create a new were-rabbit</h2>
+
+      <label>New rabbit species:</label>
+      <input name="species" />
+      <br/>
+
+      <label>Colour:</label>
+      <input name="colour" />
+      <br/>
+
+      <label>Diet:</label>
+      <input name="diet" />
+      <br/>
+
+      <button type="submit">Create new rabbit</button>
+    </form>
+  </div>
+
+  <div id="were-rabbit-container"></div>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+.were-rabbit {
+  border: 2px solid palegreen;
+  border-radius: 15px;
+  padding: 0 20px;
+  margin: 20px auto;
+}
+
+.header {
+  background-color: paleturquoise;
+  color: royalblue;
+}
+
+.body {
+  background-color: saddlebrown;
+  color: papayawhip
+}
+
+.kill-count {
+  color: firebrick;
+}
