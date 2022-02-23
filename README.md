@@ -7,3 +7,4 @@
 * [W04D03 - AJAX](/w04d03)
 * [W05D05 - Mid-term Project Kickoff](/w05d05)
 * [BREAKOUT - Express Router](/breakout-express-router/)
+* [W07D04 - Data Fetching & Other Side Effects](/w07d04)
