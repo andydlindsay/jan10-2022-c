@@ -8,3 +8,4 @@
 * [W05D05 - Mid-term Project Kickoff](/w05d05)
 * [BREAKOUT - Express Router](/breakout-express-router/)
 * [W07D04 - Data Fetching & Other Side Effects](/w07d04)
+* [W08D01 - React Review](/w08d01)
