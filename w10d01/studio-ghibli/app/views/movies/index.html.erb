@@ -1,0 +1,8 @@
+<h1>All the movies!</h1>
+
+<% @movies.each do |movie| %>
+  <div class="movie">
+    <h2>Name: <%= movie.name %></h2>
+    <%= link_to "Characters from this movie", movie_characters_path(movie.id) %>
+  </div>
+<% end %>

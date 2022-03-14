@@ -1,0 +1,9 @@
+<h1>All the characters from <%= @movie.name %></h1>
+
+<%= link_to "Go to the Movies page", movies_path %>
+
+<!-- <% @characters.each do |character| %>
+  <%= render 'character', character: character %>
+<% end %> -->
+
+<%= render @characters %>
