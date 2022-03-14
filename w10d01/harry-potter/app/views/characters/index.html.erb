@@ -1,0 +1,8 @@
+<h1>All the Characters from <%= @location.name %></h1>
+<%= link_to "Locations", locations_path %>
+
+<!-- <% @characters.each do |character| %>
+  <%= render 'character', character: character %>
+<% end %> -->
+
+<%= render @characters %>
